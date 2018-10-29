@@ -1,3 +1,38 @@
+body {
+    margin: 0;
+}
+
+
+
+
+.skurkmoving {
+    animation-name: surbev;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes surbev {
+    0% {
+        transform: translateX(30vx)opacity: 0
+    }
+
+    50% {
+        transform: translate(-15vw);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translatey(-15vw);
+        z-index: 1;
+        opacity: 1;
+    }
+}
+
+
+
+
+
 #screen {
     background-image: url("baggrund1.svg");
     background-repeat: no-repeat;
@@ -57,6 +92,7 @@
     width: 46vw;
     height: 36vw;
     position: absolute;
+    background-size: 100%;
     bottom: 0vw;
     z-index: 3
 }
@@ -66,6 +102,7 @@
     width: 45vw;
     height: 39vw;
     position: absolute;
+    background-size: 100%;
     bottom: 10vw;
     left: 55vw;
     z-index: 1
@@ -76,6 +113,7 @@
     width: 42vw;
     height: 39vw;
     position: absolute;
+    background-size: 100%;
     bottom: 5vw;
     left: 30vw;
     z-index: 2
@@ -86,6 +124,7 @@
     width: 10vw;
     height: 10vw;
     position: absolute;
+    background-size: 100%;
     bottom: 0vw;
     left: 2vw;
     z-index: 5
@@ -96,6 +135,7 @@
     width: 7vw;
     height: 12vw;
     position: absolute;
+    background-size: 100%;
     bottom: 0vw;
     left: 30vw;
     z-index: 5
@@ -103,12 +143,45 @@
 
 #energy {
     background-image: url("liv.svg");
-    width: 17vw;
-    height: 13vw;
+    width: 15vw;
+    height: 15vw;
     position: absolute;
+    background-size: 100%;
     bottom: 1vw;
     left: 87vw;
     z-index: 5;
+}
+
+#energy2 {
+    background-image: url("liv.svg");
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    background-size: 100%;
+    bottom: 1vw;
+    left: 70vw;
+    z-index: 5;
+}
+
+#energy3 {
+    background-image: url("liv.svg");
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    background-size: 100%;
+    bottom: 1vw;
+    left: 53vw;
+    z-index: 5;
+}
+
+@keyframes misteliv {
+    from {
+        display:
+    }
+
+    to {
+        display: none
+    }
 }
 
 #start {
@@ -118,6 +191,7 @@
     height: 56vw;
     bottom: 0vw;
     position: absolute;
+    background-size: 100%;
     z-index: 5;
 }
 
@@ -128,6 +202,7 @@
     height: 56vw;
     bottom: 0;
     position: absolute;
+    background-size: 100%;
     z-index: 5;
 }
 
@@ -138,6 +213,7 @@
     height: 36vw;
     bottom: 0;
     position: absolute;
+    background-size: 100%;
     z-index: 5;
 }
 
@@ -148,5 +224,25 @@
     height: 56vw;
     bottom: 0;
     position: absolute;
+    background-size: 100%;
     z-index: 5;
+}
+
+
+.startclick {
+    animation-name: startclicker;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes startclicker {
+    0% {
+        opacity: 1;
+    }
+
+
+
+    100% {
+        opacity: 0;
+    }
 }
