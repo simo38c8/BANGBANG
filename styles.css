@@ -3,8 +3,6 @@ body {
 }
 
 
-
-
 .skurkmoving {
     animation-name: surbev;
     animation-duration: 5s;
@@ -14,11 +12,13 @@ body {
 
 @keyframes surbev {
     0% {
-        transform: translateX(30vx)opacity: 0
+        transform: translateX(30vx);
+        opacity: 1
     }
 
+
     50% {
-        transform: translate(-15vw);
+        transform: translate(100vw);
         opacity: 1;
     }
 
