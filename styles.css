@@ -1,0 +1,152 @@
+#screen {
+    background-image: url("baggrund1.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 56vw;
+    position: relative;
+    overflow: hidden;
+}
+
+#game_background {
+    background-image: url("baggrund2.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 56vw;
+    position: relative;
+    z-index: 1
+}
+
+#game_background2 {
+    background-image: url("baggrund3.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 56vw;
+    bottom: 55vw;
+    position: relative;
+    z-index: 2
+}
+
+#game_background3 {
+    background-image: url("baggrund4.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 56vw;
+    bottom: 110vw;
+    position: relative;
+    z-index: 3
+}
+
+#game_background4 {
+    background-image: url("baggrund5.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 56vw;
+    position: relative;
+    bottom: 165vw;
+    z-index: 4
+}
+
+
+#skurk {
+    background-image: url("skurk.svg");
+    width: 46vw;
+    height: 36vw;
+    position: absolute;
+    bottom: 0vw;
+    z-index: 3
+}
+
+#mexico {
+    background-image: url("mexico.svg");
+    width: 45vw;
+    height: 39vw;
+    position: absolute;
+    bottom: 10vw;
+    left: 55vw;
+    z-index: 1
+}
+
+#kvinde {
+    background-image: url("kvinde.svg");
+    width: 42vw;
+    height: 39vw;
+    position: absolute;
+    bottom: 5vw;
+    left: 30vw;
+    z-index: 2
+}
+
+#points {
+    background-image: url("point.svg");
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    bottom: 0vw;
+    left: 2vw;
+    z-index: 5
+}
+
+#time {
+    background-image: url("tid.svg");
+    width: 7vw;
+    height: 12vw;
+    position: absolute;
+    bottom: 0vw;
+    left: 30vw;
+    z-index: 5
+}
+
+#energy {
+    background-image: url("liv.svg");
+    width: 17vw;
+    height: 13vw;
+    position: absolute;
+    bottom: 1vw;
+    left: 87vw;
+    z-index: 5;
+}
+
+#start {
+    display: none;
+    background-image: url("titel.svg");
+    width: 100vw;
+    height: 56vw;
+    bottom: 0vw;
+    position: absolute;
+    z-index: 5;
+}
+
+#gameover {
+    display: none;
+    background-image: url("taber.svg");
+    width: 100vw;
+    height: 56vw;
+    bottom: 0;
+    position: absolute;
+    z-index: 5;
+}
+
+#settings {
+    display: none;
+    background-image: url("settingsmenu.svg");
+    width: 49vw;
+    height: 36vw;
+    bottom: 0;
+    position: absolute;
+    z-index: 5;
+}
+
+#levelcomplete {
+    display: none;
+    background-image: url("vinder.svg");
+    width: 100vw;
+    height: 56vw;
+    bottom: 0;
+    position: absolute;
+    z-index: 5;
+}
