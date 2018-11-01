@@ -49,11 +49,16 @@ function startGame() {
     // Skjul startskærm
     document.querySelector("#start").classList.add("hide");
     // Vis spilskærm
+    document.querySelector("#start").classList.remove("show");
+
+    document.querySelector("#skurk").addEventListener("click", clickSkurk);
+    document.querySelector("#kvinde").addEventListener("click", clickKvinde);
+    document.querySelector("#mexico").addEventListener("click", clickMexico);
 }
 
-function showSettings(){
-document.querySelector("#settings").classList.add("show");
-document.querySelector("#kryds").addEventListener("click", hideSettings);
+function showSettings() {
+    document.querySelector("#settings").classList.add("show");
+    document.querySelector("#kryds").addEventListener("click", hideSettings);
 
 }
 
@@ -63,3 +68,31 @@ function hideSettings() {
 }
 
 
+
+let point = 0;
+let liv = 3;
+
+function clickSkurk() {
+    console.log("click skurk");
+    point++;
+    console.log(point);
+    document.querySelector(".antal").textContent = point;
+}
+
+
+function clickKvinde() {
+    console.log("click kvinde");
+    liv--;
+    console.log(liv);
+    let heart = "#heart" + liv;
+    document.querySelector(heart).classList.add("fade_out");
+}
+
+
+
+function clickMexico() {
+    console.log("click mexico");
+    point--;
+    console.log(point);
+    document.querySelector(".antal").textContent = point;
+}
