@@ -3,36 +3,6 @@ body {
 }
 
 
-.skurkmoving {
-    animation-name: surbev;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-@keyframes surbev {
-    0% {
-        transform: translateX(30vx);
-        opacity: 1
-    }
-
-
-    50% {
-        transform: translate(100vw);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translatey(-15vw);
-        z-index: 1;
-        opacity: 1;
-    }
-}
-
-
-
-
-
 #screen {
     background-image: url("baggrund1.svg");
     background-repeat: no-repeat;
@@ -43,6 +13,58 @@ body {
     overflow: hidden;
 }
 
+#start {
+    background-image: url("titel.svg");
+    width: 100vw;
+    height: 56vw;
+    bottom: 0vw;
+    position: absolute;
+    background-size: 100%;
+
+}
+
+
+
+
+
+#skilt {
+    background-image: url("skilt.svg");
+    width: 30vw;
+    height: 70vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: -28vw;
+    left: 40vw;
+
+}
+
+#play {
+    background-image: url("play.svg");
+    width: 17vw;
+    height: 48vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: 16vw;
+    left: 8vw;
+
+}
+
+
+#knap {
+    background-image: url("settings.svg");
+    width: 9vw;
+    height: 19vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: 21.7vw;
+    left: 10.6vw;
+}
+
+
+
 #game_background {
     background-image: url("baggrund2.svg");
     background-repeat: no-repeat;
@@ -50,7 +72,7 @@ body {
     width: 100vw;
     height: 56vw;
     position: relative;
-    z-index: 1
+
 }
 
 #game_background2 {
@@ -61,7 +83,7 @@ body {
     height: 56vw;
     bottom: 55vw;
     position: relative;
-    z-index: 2
+
 }
 
 #game_background3 {
@@ -72,7 +94,7 @@ body {
     height: 56vw;
     bottom: 110vw;
     position: relative;
-    z-index: 3
+
 }
 
 #game_background4 {
@@ -83,7 +105,7 @@ body {
     height: 56vw;
     position: relative;
     bottom: 165vw;
-    z-index: 4
+
 }
 
 
@@ -92,9 +114,35 @@ body {
     width: 46vw;
     height: 36vw;
     position: absolute;
+ background-repeat: no-repeat;
     background-size: 100%;
-    bottom: 0vw;
-    z-index: 3
+    bottom: 15vw;
+
+}
+
+#skurk2 {
+    background-image: url("skurk.svg");
+    width: 46vw;
+    height: 36vw;
+    position: absolute;
+ background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 15vw;
+    left: 30vw;
+
+}
+
+
+#skurk3 {
+    background-image: url("skurk.svg");
+    width: 46vw;
+    height: 36vw;
+    position: absolute;
+ background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 3vw;
+    left: 60vw;
+
 }
 
 #mexico {
@@ -103,9 +151,36 @@ body {
     height: 39vw;
     position: absolute;
     background-size: 100%;
-    bottom: 10vw;
+ background-repeat: no-repeat;
+    bottom: 15vw;
     left: 55vw;
-    z-index: 1
+
+}
+
+
+
+#mexico2 {
+    background-image: url("mexico.svg");
+    width: 45vw;
+    height: 39vw;
+    position: absolute;
+    background-size: 100%;
+ background-repeat: no-repeat;
+    bottom: 1vw;
+    left: -4vw;
+
+}
+
+#mexico3 {
+    background-image: url("mexico.svg");
+    width: 45vw;
+    height: 39vw;
+    position: absolute;
+    background-size: 100%;
+ background-repeat: no-repeat;
+    bottom: 17vw;
+    left: 30vw;
+
 }
 
 #kvinde {
@@ -114,9 +189,36 @@ body {
     height: 39vw;
     position: absolute;
     background-size: 100%;
-    bottom: 5vw;
+    background-repeat: no-repeat;
+    bottom: 1vw;
     left: 30vw;
-    z-index: 2
+
+}
+
+
+#kvinde2 {
+    background-image: url("kvinde.svg");
+    width: 42vw;
+    height: 39vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: 16vw;
+    left: 0vw;
+
+}
+
+
+#kvinde3 {
+    background-image: url("kvinde.svg");
+    width: 42vw;
+    height: 39vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: 18vw;
+    left: 60vw;
+
 }
 
 #points {
@@ -125,75 +227,61 @@ body {
     height: 10vw;
     position: absolute;
     background-size: 100%;
+background-repeat: no-repeat;
     bottom: 0vw;
     left: 2vw;
-    z-index: 5
+
 }
 
 #time {
     background-image: url("tid.svg");
-    width: 7vw;
+    width: 6vw;
     height: 12vw;
     position: absolute;
     background-size: 100%;
-    bottom: 0vw;
+background-repeat: no-repeat;
+    bottom: -1.5vw;
     left: 30vw;
-    z-index: 5
+
 }
 
 #energy {
     background-image: url("liv.svg");
-    width: 15vw;
+    width: 12vw;
     height: 15vw;
     position: absolute;
     background-size: 100%;
-    bottom: 1vw;
+background-repeat: no-repeat;
+    bottom: -3vw;
     left: 87vw;
-    z-index: 5;
+
 }
 
 #energy2 {
     background-image: url("liv.svg");
-    width: 15vw;
+    width: 12vw;
     height: 15vw;
     position: absolute;
     background-size: 100%;
-    bottom: 1vw;
-    left: 70vw;
-    z-index: 5;
+background-repeat: no-repeat;
+    bottom: -3vw;
+    left: 75vw;
+
 }
 
 #energy3 {
     background-image: url("liv.svg");
-    width: 15vw;
+    width: 12vw;
     height: 15vw;
     position: absolute;
     background-size: 100%;
-    bottom: 1vw;
-    left: 53vw;
-    z-index: 5;
+background-repeat: no-repeat;
+    bottom: -3vw;
+    left: 63vw;
+
 }
 
-@keyframes misteliv {
-    from {
-        display:
-    }
 
-    to {
-        display: none
-    }
-}
-
-#start {
-    display: none;
-    background-image: url("titel.svg");
-    width: 100vw;
-    height: 56vw;
-    bottom: 0vw;
-    position: absolute;
-    background-size: 100%;
-    z-index: 5;
-}
 
 #gameover {
     display: none;
@@ -203,18 +291,32 @@ body {
     bottom: 0;
     position: absolute;
     background-size: 100%;
-    z-index: 5;
+
 }
 
 #settings {
-    display: none;
+    display: ;
     background-image: url("settingsmenu.svg");
-    width: 49vw;
-    height: 36vw;
-    bottom: 0;
+    width: 60vw;
+    height: 40vw;
+    bottom: 6vw;
+    left: 25vw;
     position: absolute;
     background-size: 100%;
-    z-index: 5;
+    background-repeat: no-repeat;
+
+}
+
+#kryds {
+    background-image: url("button.svg");
+    width: 4vw;
+    height: 5vw;
+    bottom: 28vw;
+    left: 51vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
 }
 
 #levelcomplete {
@@ -225,24 +327,149 @@ body {
     bottom: 0;
     position: absolute;
     background-size: 100%;
-    z-index: 5;
+
 }
 
 
-.startclick {
-    animation-name: startclicker;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+#figur{
+    cursor: crosshair
 }
 
-@keyframes startclicker {
-    0% {
-        opacity: 1;
-    }
+
+#screen {
+  width: 100vw;
+  height: 56.25vw;
+  background-color: green;
+  overflow: hidden;
+  position: relative;
+
+/*  touch-action: none;*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* effekter */
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+.blur {
+  filter:blur(5px) brightness(80%);
+}
+
+.fade_out {
+  animation-name: fadeout_kf;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeout_kf {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.pulse {
+  animation-name: pulse_kf;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+}
 
 
+@keyframes pulse_kf {
+  0% {
+    transform: scale(0.97);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
-    100% {
-        opacity: 0;
-    }
+dissappear {
+  animation-name: dissappear_kf;
+  animation-duration: .7s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(.59,-0.56,.77,1.34);
+  animation-fill-mode: forwards;
+}
+
+@keyframes dissappear_kf {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+.explode {
+  animation-name: explode_kf;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+
+@keyframes explode_kf {
+
+
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+
+.shake {
+  width: 100vw;
+  height: 56.25vw;
+
+  animation-name: shake_kf;
+  animation-duration: .2s;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes shake_kf {
+  0% {
+    background-color: transparent;
+    transform: rotate(0) scale(1);
+  }
+
+  10% {
+     background-color: rgba(255, 246, 27, 0.7);
+    transform: rotate(-5deg) scale(1.5);
+  }
+
+  50% {
+    background-color: rgba(255, 165, 0, 0.7);
+    transform: rotate(10deg) scale(1.5);
+  }
+
+  100% {
+    background-color: rgba(255, 0, 0, 0.7);
+    transform: rotate(-10deg) scale(1.5);
+  }
 }
