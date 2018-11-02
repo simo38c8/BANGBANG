@@ -77,15 +77,36 @@ function clickSkurk() {
     point++;
     console.log(point);
     document.querySelector(".antal").textContent = point;
+
+    console.log(this);
+    this.classList.add("fade_out")
+
+    let myNumber = Math.floor((Math.random() * 3) + 1);
+    console.log("tilfældigt tal " + myNumber)
+
+    this.classList = "positionb" + myNumber;
+    gameStatus()
 }
 
 
 function clickKvinde() {
     console.log("click kvinde");
-    liv--;
+
     console.log(liv);
     let heart = "#heart" + liv;
-    document.querySelector(heart).classList.add("fade_out");
+    document.querySelector(heart).classList.add("hide");
+    liv--;
+
+    console.log(this);
+
+
+
+    let myNumber = Math.floor((Math.random() * 3) + 1);
+    console.log("tilfældigt tal " + myNumber)
+
+    this.classList = "positionb" + myNumber;
+    gameStatus()
+
 }
 
 
@@ -95,4 +116,40 @@ function clickMexico() {
     point--;
     console.log(point);
     document.querySelector(".antal").textContent = point;
+    this.classList.add("hide");
+
+
+    console.log(this);
+
+    let myNumber = Math.floor((Math.random() * 3) + 1);
+    console.log("tilfældigt tal " + myNumber)
+
+    this.classList = "positionb" + myNumber;
+    gameStatus()
+
+
+
+}
+
+
+function gameStatus() {
+    if (liv <= 0) {
+        gameOver();
+    }
+
+    if (point > 9) {
+        levelCompleted();
+    }
+}
+
+function gameOver() {
+    console.log("gameover");
+    document.querySelector("#gameover").classList.add("show");
+    document.querySelector("#grav").classList.add("show");
+}
+
+function levelCompleted() {
+    console.log("victory");
+    document.querySelector("#levelcomplete").classList.add("show");
+
 }

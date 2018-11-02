@@ -119,8 +119,6 @@ body {
     position: absolute;
     background-repeat: no-repeat;
     background-size: 100%;
-    bottom: 6vw;
-
 }
 
 #skurk2 {
@@ -130,13 +128,7 @@ body {
     position: absolute;
     background-repeat: no-repeat;
     background-size: 100%;
-    bottom: 23vw;
-    left: 70vw;
-
-
 }
-
-
 
 
 #mexico {
@@ -146,34 +138,58 @@ body {
     position: absolute;
     background-size: 100%;
     background-repeat: no-repeat;
+
+}
+
+.position1 {
+    bottom: 6vw;
+}
+
+.position2 {
+    bottom: 5vw;
+    left: 35vw;
+}
+
+.position3 {
     bottom: 5vw;
     left: 66vw;
-
 }
 
-
-
-#mexico2 {
-    background-image: url("mexico.svg");
-    width: 27vw;
-    height: 25vw;
-    position: absolute;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    bottom: 1vw;
-    left: -4vw;
-
+/*positioner bagved*/
+.positionb1 {
+    bottom: 23vw;
+    left: 0vw;
 }
 
-#mexico2 {
-    background-image: url("mexico.svg");
-    width: 27vw;
-    height: 25vw;
-    position: absolute;
-    background-size: 100%;
-    background-repeat: no-repeat;
+.positionb2 {
     bottom: 25vw;
     left: 33vw;
+}
+
+.positionb3 {
+    bottom: 25vw;
+    left: 65vw;
+}
+
+#mexico2 {
+    background-image: url("mexico.svg");
+    width: 27vw;
+    height: 25vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+}
+
+#mexico2 {
+    background-image: url("mexico.svg");
+    width: 27vw;
+    height: 25vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
 
 }
 
@@ -184,9 +200,6 @@ body {
     position: absolute;
     background-size: 100%;
     background-repeat: no-repeat;
-    bottom: 5vw;
-    left: 35vw;
-
 }
 
 
@@ -197,28 +210,14 @@ body {
     position: absolute;
     background-size: 100%;
     background-repeat: no-repeat;
-    bottom: 23vw;
-    left: 0vw;
 
 }
 
 
-#kvinde3 {
-    background-image: url("kvinde.svg");
-    width: 27vw;
-    height: 25vw;
-    position: absolute;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    bottom: 18vw;
-    left: 60vw;
-
-}
 
 
 
 #gameover {
-    display: none;
     background-image: url("taber.svg");
     width: 100vw;
     height: 56vw;
@@ -254,7 +253,6 @@ body {
 }
 
 #levelcomplete {
-    display: none;
     background-image: url("vinder.svg");
     width: 100vw;
     height: 56vw;
@@ -400,7 +398,7 @@ dissappear {
 
 }
 
-#heart {
+#heart1 {
     background-image: url("liv.svg");
     width: 12vw;
     height: 15vw;
@@ -436,4 +434,17 @@ dissappear {
     bottom: -3vw;
     left: 63vw;
     pointer-events: none;
+}
+
+#grav {
+    background-image: url(grav.svg)
+    width:12vw;
+    height: 15vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: 3vw;
+    left: 50vw;
+    pointer-events: none;
+
 }
