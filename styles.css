@@ -2,16 +2,12 @@ body {
     margin: 0;
 }
 
-
-#screen {
-    background-image: url("baggrund1.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100vw;
-    height: 56vw;
-    position: relative;
-    overflow: hidden;
+:root {
+    font-size: 2vw;
 }
+
+
+/* START */
 
 #start {
     background-image: url("titel.svg");
@@ -23,6 +19,19 @@ body {
 
 }
 
+#screen {
+    width: 100vw;
+    height: 56.25vw;
+    background-color: green;
+    overflow: hidden;
+    position: relative;
+    background-image: url("baggrund1.svg");
+    background-repeat: no-repeat;
+    /*  touch-action: none;*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
 
 
 
@@ -63,7 +72,9 @@ body {
     left: 10.6vw;
 }
 
+/* START KNAP SLUT*/
 
+/*BAGGRUND*/
 
 #game_background {
     background-image: url("baggrund2.svg");
@@ -111,35 +122,10 @@ body {
 
 }
 
-
-#skurk {
-    background-image: url("skurk.svg");
-    width: 27vw;
-    height: 25vw;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-#skurk2 {
-    background-image: url("skurk.svg");
-    width: 27vw;
-    height: 25vw;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
+/* BAGGRUND SLUT*/
 
 
-#mexico {
-    background-image: url("mexico.svg");
-    width: 27vw;
-    height: 25vw;
-    position: absolute;
-    background-size: 100%;
-    background-repeat: no-repeat;
-
-}
+/* POSITION*/
 
 .position1 {
     bottom: 6vw;
@@ -171,7 +157,31 @@ body {
     left: 65vw;
 }
 
-#mexico2 {
+/* POSITION SLUT*/
+
+
+/* OBJEKTER */
+
+#skurk1 {
+    background-image: url("skurk.svg");
+    width: 27vw;
+    height: 25vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#skurk {
+    background-image: url("skurk.svg");
+    width: 27vw;
+    height: 25vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+#mexico {
     background-image: url("mexico.svg");
     width: 27vw;
     height: 25vw;
@@ -182,7 +192,7 @@ body {
 
 }
 
-#mexico2 {
+#mexico1 {
     background-image: url("mexico.svg");
     width: 27vw;
     height: 25vw;
@@ -192,6 +202,16 @@ body {
 
 
 }
+
+#kvinde1 {
+    background-image: url("kvinde.svg");
+    width: 27vw;
+    height: 25vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 
 #kvinde {
     background-image: url("kvinde.svg");
@@ -200,22 +220,14 @@ body {
     position: absolute;
     background-size: 100%;
     background-repeat: no-repeat;
-}
-
-
-#kvinde2 {
-    background-image: url("kvinde.svg");
-    width: 27vw;
-    height: 25vw;
-    position: absolute;
-    background-size: 100%;
-    background-repeat: no-repeat;
 
 }
 
 
+/* OBJEKTER SLUT*/
 
 
+/* GAMEOVER*/
 
 #gameover {
     background-image: url("taber.svg");
@@ -226,6 +238,35 @@ body {
     background-size: 100%;
 
 }
+
+#grav {
+    background-image: url(grav.svg);
+    width: 30vw;
+    height: 35vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: 0vw;
+    left: 60vw;
+    pointer-events: none;
+
+}
+
+#replay {
+    background-image: url(replay.svg);
+    width: 20vw;
+    height: 25vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: -5vw;
+    left: 5vw;
+    pointer-events: none;
+
+}
+
+
+/* SETTINGS */
 
 #settings {
     display: ;
@@ -252,6 +293,10 @@ body {
 
 }
 
+/* SETTINGS SLUT */
+
+/* LEVEL COMPLETE*/
+
 #levelcomplete {
     background-image: url("vinder.svg");
     width: 100vw;
@@ -262,24 +307,16 @@ body {
 
 }
 
+/* LEVEL COMPLETE SLUT*/
 
-#figur {
+.game {
     cursor: crosshair
 }
 
 
-#screen {
-    width: 100vw;
-    height: 56.25vw;
-    background-color: green;
-    overflow: hidden;
-    position: relative;
 
-    /*  touch-action: none;*/
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-}
+
+
 
 /* effekter */
 .hide {
@@ -348,7 +385,10 @@ dissappear {
     }
 }
 
+/* effekt slut*/
 
+
+/* UI ELEMENTER*/
 
 #points .coin {
     background-image: url("point.svg");
@@ -357,18 +397,11 @@ dissappear {
     position: absolute;
     background-size: 100%;
     background-repeat: no-repeat;
-    bottom: -5.3vw;
     left: -11vw;
     pointer-events: none;
 }
 
 
-
-#points .antal {
-    width: 6rem;
-    left: 30vw;
-    pointer-events: none;
-}
 
 #points {
     width: 1vw;
@@ -376,7 +409,7 @@ dissappear {
     position: absolute;
     background-size: 100%;
     background-repeat: no-repeat;
-    bottom: 6vw;
+    bottom: 10.4vw;
     color: white;
     font-size: 5rem;
     font-family: sans-serif;
@@ -436,15 +469,5 @@ dissappear {
     pointer-events: none;
 }
 
-#grav {
-    background-image: url(grav.svg)
-    width:12vw;
-    height: 15vw;
-    position: absolute;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    bottom: 3vw;
-    left: 50vw;
-    pointer-events: none;
 
-}
+/* UI ELEMENTER SLUT*/

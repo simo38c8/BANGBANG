@@ -10,6 +10,8 @@ function sidenVises() {
 
 }
 
+//START GAME
+
 function showStart() {
     console.log("Show start");
     // Vis startskærm
@@ -54,7 +56,15 @@ function startGame() {
     document.querySelector("#skurk").addEventListener("click", clickSkurk);
     document.querySelector("#kvinde").addEventListener("click", clickKvinde);
     document.querySelector("#mexico").addEventListener("click", clickMexico);
+
+    document.querySelector("#skurk1").addEventListener("click", clickSkurk1);
+    document.querySelector("#kvinde1").addEventListener("click", clickKvinde1);
+    document.querySelector("#mexico1").addEventListener("click", clickMexico1);
 }
+
+//STARTGAME SLUT
+
+//SETTINGS
 
 function showSettings() {
     document.querySelector("#settings").classList.add("show");
@@ -67,10 +77,17 @@ function hideSettings() {
     document.querySelector("#settings").classList.add("fade_out");
 }
 
+//SETTINGS SLUT
 
+//POINT OG LIV
 
 let point = 0;
 let liv = 3;
+
+//POINT OG LIV SLUT
+
+
+//CLICK FIGURER
 
 function clickSkurk() {
     console.log("click skurk");
@@ -131,6 +148,72 @@ function clickMexico() {
 
 }
 
+//CLICK FIGURER SLUT
+
+
+//CLICK FIGURER PÅ FORREST RÆKKE
+
+function clickSkurk1() {
+    console.log("click skurk");
+    point++;
+    console.log(point);
+    document.querySelector(".antal").textContent = point;
+
+    console.log(this);
+    this.classList.add("fade_out")
+
+    let myNumber = Math.floor((Math.random() * 3) + 1);
+    console.log("tilfældigt tal " + myNumber)
+
+    this.classList = "position" + myNumber;
+    gameStatus()
+}
+
+
+function clickKvinde1() {
+    console.log("click kvinde");
+
+    console.log(liv);
+    let heart = "#heart" + liv;
+    document.querySelector(heart).classList.add("hide");
+    liv--;
+
+    console.log(this);
+
+
+
+    let myNumber = Math.floor((Math.random() * 3) + 1);
+    console.log("tilfældigt tal " + myNumber)
+
+    this.classList = "position" + myNumber;
+    gameStatus()
+
+}
+
+
+
+function clickMexico1() {
+    console.log("click mexico");
+    point--;
+    console.log(point);
+    document.querySelector(".antal").textContent = point;
+    this.classList.add("hide");
+
+
+    console.log(this);
+
+    let myNumber = Math.floor((Math.random() * 3) + 1);
+    console.log("tilfældigt tal " + myNumber)
+
+    this.classList = "position" + myNumber;
+    gameStatus()
+
+}
+
+//CLICK FIGURER PÅ FORREST RÆKKE SLUT
+
+
+//GAME OVER OG LEVEL COMPLETE
 
 function gameStatus() {
     if (liv <= 0) {
@@ -145,7 +228,7 @@ function gameStatus() {
 function gameOver() {
     console.log("gameover");
     document.querySelector("#gameover").classList.add("show");
-    document.querySelector("#grav").classList.add("show");
+    document.querySelector("#replay").classList.add("pulse");
 }
 
 function levelCompleted() {
@@ -153,3 +236,5 @@ function levelCompleted() {
     document.querySelector("#levelcomplete").classList.add("show");
 
 }
+
+//GAME OVER OG GAME COMPLETE SLUT
